@@ -132,7 +132,7 @@ Figure 11: Grouping of similar bi-grams and tri-grams using Similarity score ana
 
 We tried to aggregate all the findings into a dashboard that can be used as single source of truth by both, candidates exploring job opportunities looking for feedback on employers and employers evaluating their employer brand and employee satisfaction levels.
 
-![Capture1](https://user-images.githubusercontent.com/46653178/82086323-5c03ea80-96bc-11ea-9ca5-daa0cf8e0e0f.JPG)
+![Capture15](https://user-images.githubusercontent.com/46653178/82094881-e9027000-96cb-11ea-8126-cf5aff9842e9.JPG)
 
 Figure 12: Dashboard showing the results
 
