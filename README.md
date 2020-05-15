@@ -32,4 +32,4 @@ Social media has had large impact on multiple areas including in the domain of A
 
 We used Web crawling technique to get the data from Glassdoor.com. We scraped the reviews for four major employers in US – Microsoft, Google, Amazon and IBM and crawl a total of 100,000+ reviews from 2008 to Mar 2020. Figure 1 below shows the final generated corpus.
 
-
+![Capture2](https://user-images.githubusercontent.com/46653178/82082900-d2055300-96b6-11ea-92ef-fe4e6916ac65.JPG)
