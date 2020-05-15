@@ -76,7 +76,8 @@ Figure 4: Rating distribution by company
 
 We wanted to see how long (in words) the reviews were typically to understand if we can infer some meaning from the text. A review with just few words would not have helped the analysis as most of the words would be stop words or words with no real meaning. But much to our comfort, the reviews were not too short with most falling under the range of 5-15 words for both pros and cons. Figure 5 and 6 show the distribution of words in pros and cons respectively.
 
- 
+![Capture6](https://user-images.githubusercontent.com/46653178/82084652-9750ea00-96b9-11ea-87e6-43a4cb054afc.JPG)
+
 Figure 5: Word count in pros text
 
  
