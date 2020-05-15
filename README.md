@@ -42,3 +42,5 @@ The text data under Pros and Cons was then cleaned and preprocessed for analysis
 Once the data from Glassdoor is extracted, we must consider (or construct) a systematic methodology for analyzing the text. In figure 2 below, we provide the framework that we follow for this analysis. Armed with this framework, we perform text processing for data cleaning as described in previous section, which is in turn used as source for subsequent analysis. Once the basic exploration is done on the prepared corpus, sentiment analysis will be performed to assign the polarity of each review. 
 
 Later, n-grams are extracted from text (both pros and cons) along with its corresponding sentiment score. Top bi-grams and tri-grams are identified by the frequency of occurrence in the corpus for each company as these are the most talked in the reviews. Next, we perform Similarity score analysis to identify unique n-grams and zero in top 5 positive and negative n-grams by average sentiment score. The results are then aggregated on a comprehensive dashboard.
+
+![Capture3](https://user-images.githubusercontent.com/46653178/82083161-3e805200-96b7-11ea-88f4-74224dc18003.JPG)
