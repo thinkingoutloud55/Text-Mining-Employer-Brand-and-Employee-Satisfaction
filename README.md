@@ -44,3 +44,18 @@ Once the data from Glassdoor is extracted, we must consider (or construct) a sys
 Later, n-grams are extracted from text (both pros and cons) along with its corresponding sentiment score. Top bi-grams and tri-grams are identified by the frequency of occurrence in the corpus for each company as these are the most talked in the reviews. Next, we perform Similarity score analysis to identify unique n-grams and zero in top 5 positive and negative n-grams by average sentiment score. The results are then aggregated on a comprehensive dashboard.
 
 ![Capture3](https://user-images.githubusercontent.com/46653178/82083161-3e805200-96b7-11ea-88f4-74224dc18003.JPG)
+
+Figure 2: Flow chart depicting the process flow for the study
+
+## Exploratory Data Analysis
+
+We tried to explore the data we have gathered to gain more insights into the data before doing any textual analysis. In this process, we tried to get answers for below questions;
+
+•	Number of reviews per company
+•	Rating distribution by company
+•	Word count in reviews
+•	Polarity score by company
+
+### 1. Number of reviews per company
+
+The figure 3 below shows the total number of reviews by company along with the distribution between Current, former and employees with no status. We can observe that Amazon has a lot more reviews compared to other firms followed by IBM, Microsoft and Google. Also, among those categorized as current and former employees, current employees have more reviews for all the companies.  
