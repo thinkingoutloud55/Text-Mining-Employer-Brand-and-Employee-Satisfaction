@@ -124,7 +124,7 @@ Once the tri-grams and bi-grams were extracted, we used the top 100 by frequency
 
 This analysis was an improvement on previous works that tried to extract keywords that had the most impact on employee satisfaction. Using this we were able to combine different forms of the same characteristic and find the ‘Employer Brand’ characteristic which had the most positive and negative effect on employees.
 
-
+![Capture12](https://user-images.githubusercontent.com/46653178/82087361-ef89eb00-96bd-11ea-9992-2f2a681225c8.JPG)
 
 Figure 11: Grouping of similar bi-grams and tri-grams using Similarity score analysis
 
@@ -161,6 +161,7 @@ Actions recommended;
 2. Candidates can look at their preferences and see if their expectations will be met in a particular organization. For example, if a candidate is looking for ‘flexible work hours’ for taking care of personal responsibilities they would be better of look at positions in Microsoft as employees reviewed it as one of the best characteristics of the company
 
 These are some of the ways both companies and candidates can make use of the findings from this study. 
+
 
 ## References
 
