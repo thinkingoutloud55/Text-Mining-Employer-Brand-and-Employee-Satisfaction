@@ -114,7 +114,7 @@ We chose to do Frequency-based vectorization and are using CountVectorizer for e
 
 Previous works have used single words and manually completed the characteristic based on the polarity of the word. For example, if the word ‘hours’ returned a negative sentiment score then the characteristic was manually considered as ‘long work hours’ for a company. To overcome this kind of manual estimation, we have extracted the bi-grams and tri-grams along with the sentiment score. The figure below shows the top 5 bi-grams and tri-grams for one of the companies- IBM. Note that some of the tri-grams and bi-grams are similar (used similarity analysis explained in next section to resolve this) and some actually do not have much meaning (for example- ‘not good’).
 
-
+![Capture11](https://user-images.githubusercontent.com/46653178/82087265-c10c1000-96bd-11ea-8773-0846d7e2b181.JPG)
 
 Figure 10: Top 5 trigrams and bigrams by frequency for IBM 
 
@@ -136,7 +136,7 @@ We tried to aggregate all the findings into a dashboard that can be used as sing
 
 Figure 12: Dashboard showing the results
 
-Link to the tableau dashboard: https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1 </a>
+Link to the tableau dashboard: https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1
 
 ## Key Insights
 
