@@ -88,7 +88,7 @@ Figure 6: Word count in cons text
 
 Another important analysis we wanted to explore was the distribution of sentiment score for each company. Consistent to the ratings, the sentiment score was predominantly on the positive side (Figure 7). Although, there were some anomalies, the ratings were consistent with the polarity distribution. In other words, reviews which had good ratings (4 or 5) had high positive polarity score. Figure 8 shows the distribution of polarity score for reviews that were rated 3 or below. Ideally, we would have liked to see a lower polarity score for these but almost 19,000+ reviews show high polarity score of >0.6.
 
-   
+![Capture8](https://user-images.githubusercontent.com/46653178/82085512-2dd1db00-96bb-11ea-853a-2a87b9623386.JPG) 
    
 Figure 7: Polarity score distribution for each review by company
 
