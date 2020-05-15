@@ -96,3 +96,80 @@ Figure 7: Polarity score distribution for each review by company
 
 Figure 8: Polarity score of reviews that were rated 3 or below.
 
+## Choice and Rationale for Text Analytics Methods and Results
+
+### 1. Sentiment Analysis
+
+After cleaning the text and performing exploratory analysis, we decided to do sentiment analysis to achieve two purposes. The primary purpose was to estimate the employee satisfaction with the organization from the reviews. Secondly, to check if the ratings provided against the reviews were reflecting the emotion or sentiment in the textual content of the review.
+
+To achieve these objectives, we tried to first understand which library was working better by passing some reviews to NLTK and TextBlob. One key observation was that TextBlob was failing when it was used on negative reviews. The figure below shows the sample reviews on which TextBlob and NLTK were applied and the resultant sentiment score. We can see that TextBlob returns high positive sentiment score for negative score whereas NLTK does a better job with the same reviews. So, we decided to use NLTK for our sentiment analysis.
+ 
+Figure 9: Using TextBlob and NLTK for sentiment score analysis on negative reviews
+ 
+### 2. Identifying n-grams as Characteristics of a Company
+
+We chose to do Frequency-based vectorization and are using CountVectorizer for extracting bi-grams and tri-grams from the text to identify the characteristics of the company which are most frequently used in the reviews. The reason we opted for bi-grams and tri-grams in place of single words was to preserve the meaning of the characteristic of a company as ‘Work life balance’ or ‘good pay’ has a completely different meaning to single words such as ‘work’, ‘life’, ‘balance’, good’ and ‘pay’. 
+
+Previous works have used single words and manually completed the characteristic based on the polarity of the word. For example, if the word ‘hours’ returned a negative sentiment score then the characteristic was manually considered as ‘long work hours’ for a company. To overcome this kind of manual estimation, we have extracted the bi-grams and tri-grams along with the sentiment score. The figure below shows the top 5 bi-grams and tri-grams for one of the companies- IBM. Note that some of the tri-grams and bi-grams are similar (used similarity analysis explained in next section to resolve this) and some actually do not have much meaning (for example- ‘not good’).
+
+
+
+Figure 10: Top 5 trigrams and bigrams by frequency for IBM 
+
+### 3. Similarity Score Analysis 
+
+Once the tri-grams and bi-grams were extracted, we used the top 100 by frequency from both pros and cons to conduct similarity analysis and further zero-in on unique bi-grams or tri-grams which were having the most positive and negative effect on the employees satisfaction. For this purpose, we used cosine similarity in order to combine the tri-grams and bi-grams which were similar. Figure 11 shows the grouping of words based on cosine similarity for a company. We can see that words that mean the same are grouped into one parent word. 
+
+This analysis was an improvement on previous works that tried to extract keywords that had the most impact on employee satisfaction. Using this we were able to combine different forms of the same characteristic and find the ‘Employer Brand’ characteristic which had the most positive and negative effect on employees.
+
+
+
+Figure 11: Grouping of similar bi-grams and tri-grams using Similarity score analysis
+
+### 4. Results
+
+We tried to aggregate all the findings into a dashboard that can be used as single source of truth by both, candidates exploring job opportunities looking for feedback on employers and employers evaluating their employer brand and employee satisfaction levels.
+
+
+
+Figure 12: Dashboard showing the results
+
+Link to the tableau dashboard: https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1
+
+## Key Insights
+
+Some of the key insights drawn from this study are;
+
+1. All the companies have seen a decline in employee satisfaction levels from 2008, although there were some years when the satisfaction levels improved compared to preceding years
+
+2. Google and Microsoft have high average employee satisfaction followed by Amazon and IBM
+
+3. Employer characteristic which had the most positive effect on employee satisfaction-
+ Amazon – Great Benefits 
+	Google – Free Food
+	IBM – Great People
+	Microsoft – Great Pay Benefit
+ 
+4. Employer characteristic which had the most negative effect on employee satisfaction-
+	Amazon – Bad Work
+	Google – Bad Work Life
+	IBM – Hike Not Good
+	Microsoft – Life Balance
+
+Actions recommended;
+
+1. Companies can look at some of their characteristics which are drawing highly negative reviews from employees and strive to make them better or create a positive attitude in people towards those characteristics. For example, employees in Microsoft have high negative impression of their ‘Performance Review’ process. So, Microsoft can look at the communications around this particular process and look inward to address any concerns from employees
+2. Candidates can look at their preferences and see if their expectations will be met in a particular organization. For example, if a candidate is looking for ‘flexible work hours’ for taking care of personal responsibilities they would be better of look at positions in Microsoft as employees reviewed it as one of the best characteristics of the company
+
+These are some of the ways both companies and candidates can make use of the findings from this study. 
+
+## References
+
+1. What Is Employer Branding and How Can It Grow Your Business? (https://business.linkedin.com/talent-solutions/blog/employer-brand/2018/employer-branding)
+2. 10 Reasons Why Employer Branding Is Important (https://linkhumans.com/employer-branding-important/)
+3. Employee Satisfaction and Corporate Performance: Mining Employee Reviews on Glassdoor.com (https://pdfs.semanticscholar.org/b784/71ca2ac990e3ab2d70283e42e2bb5d3a8f7a.pdf)
+4. Improving Employee Satisfaction Through Text Analytics (https://www.lexjansen.com/sesug/2019/SESUG2019_Paper-243_Final_PDF.pdf)
+5. Text Mining Company Reviews (https://mguideng.github.io/2018-07-16-text-mining-glassdoor-big3/)
+6. Influence of support leadership and teamwork cohesion on organizational learning, innovation and performance: an empirical examination (https://www.sciencedirect.com/science/article/pii/S0166497204000914)
+7. Employer Branding for Dummies (http://resources.glassdoor.com/rs/glassdoor/images/employer-branding-for-dummies.pdf)
+
