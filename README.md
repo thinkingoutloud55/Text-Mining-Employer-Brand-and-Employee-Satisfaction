@@ -92,6 +92,7 @@ Another important analysis we wanted to explore was the distribution of sentimen
    
 Figure 7: Polarity score distribution for each review by company
 
- 
+![Capture9](https://user-images.githubusercontent.com/46653178/82085665-5b1e8900-96bb-11ea-9eb0-baf3d4339ec3.JPG)
+
 Figure 8: Polarity score of reviews that were rated 3 or below.
 
