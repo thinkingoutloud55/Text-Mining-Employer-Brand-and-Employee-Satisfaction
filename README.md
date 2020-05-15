@@ -68,6 +68,8 @@ Figure 3: Distribution of reviews by company
 
 Looking at the rating distribution by company on a scale of 1-5 (5 being the best) in figure 4 below, we can conclude that all the companies were predominantly rated either 4 or 5. Interestingly, Microsoft is the only firm with more 4 ratings than 5 ratings.   
  
+![Capture5](https://user-images.githubusercontent.com/46653178/82084575-7be5df00-96b9-11ea-9d0a-55a48399efe5.JPG)
+
 Figure 4: Rating distribution by company
 
 ### 3. Word count in reviews
