@@ -60,3 +60,30 @@ We tried to explore the data we have gathered to gain more insights into the dat
 
 The figure 3 below shows the total number of reviews by company along with the distribution between Current, former and employees with no status. We can observe that Amazon has a lot more reviews compared to other firms followed by IBM, Microsoft and Google. Also, among those categorized as current and former employees, current employees have more reviews for all the companies.  
 
+### 2. Rating distribution in the companies
+
+Looking at the rating distribution by company on a scale of 1-5 (5 being the best) in figure 4 below, we can conclude that all the companies were predominantly rated either 4 or 5. Interestingly, Microsoft is the only firm with more 4 ratings than 5 ratings.   
+ 
+Figure 4: Rating distribution by company
+
+### 3. Word count in reviews
+
+We wanted to see how long (in words) the reviews were typically to understand if we can infer some meaning from the text. A review with just few words would not have helped the analysis as most of the words would be stop words or words with no real meaning. But much to our comfort, the reviews were not too short with most falling under the range of 5-15 words for both pros and cons. Figure 5 and 6 show the distribution of words in pros and cons respectively.
+
+ 
+Figure 5: Word count in pros text
+
+ 
+Figure 6: Word count in cons text
+
+### 4. Polarity score distribution by company
+
+Another important analysis we wanted to explore was the distribution of sentiment score for each company. Consistent to the ratings, the sentiment score was predominantly on the positive side (Figure 7). Although, there were some anomalies, the ratings were consistent with the polarity distribution. In other words, reviews which had good ratings (4 or 5) had high positive polarity score. Figure 8 shows the distribution of polarity score for reviews that were rated 3 or below. Ideally, we would have liked to see a lower polarity score for these but almost 19,000+ reviews show high polarity score of >0.6.
+
+   
+   
+Figure 7: Polarity score distribution for each review by company
+
+ 
+Figure 8: Polarity score of reviews that were rated 3 or below.
+
