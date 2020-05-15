@@ -80,7 +80,8 @@ We wanted to see how long (in words) the reviews were typically to understand if
 
 Figure 5: Word count in pros text
 
- 
+![Capture7](https://user-images.githubusercontent.com/46653178/82085313-d03d8e80-96ba-11ea-9e78-06dcf72fc5c2.JPG)
+
 Figure 6: Word count in cons text
 
 ### 4. Polarity score distribution by company
