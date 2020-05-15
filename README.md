@@ -104,7 +104,7 @@ After cleaning the text and performing exploratory analysis, we decided to do se
 
 To achieve these objectives, we tried to first understand which library was working better by passing some reviews to NLTK and TextBlob. One key observation was that TextBlob was failing when it was used on negative reviews. The figure below shows the sample reviews on which TextBlob and NLTK were applied and the resultant sentiment score. We can see that TextBlob returns high positive sentiment score for negative score whereas NLTK does a better job with the same reviews. So, we decided to use NLTK for our sentiment analysis.
 
-
+![Capture10 JPG](https://user-images.githubusercontent.com/46653178/82087094-6ecaef00-96bd-11ea-80b5-c3c32ef8090f.png)
 
 Figure 9: Using TextBlob and NLTK for sentiment score analysis on negative reviews
  
@@ -136,7 +136,7 @@ We tried to aggregate all the findings into a dashboard that can be used as sing
 
 Figure 12: Dashboard showing the results
 
-Link to the tableau dashboard: <a href = "https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1" </a>
+Link to the tableau dashboard: https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1 </a>
 
 ## Key Insights
 
