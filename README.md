@@ -134,7 +134,7 @@ We tried to aggregate all the findings into a dashboard that can be used as sing
 
 Figure 12: Dashboard showing the results
 
-Link to the tableau dashboard: <a href = "https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1 </a>
+Link to the tableau dashboard: <a href = "https://public.tableau.com/profile/sagar.surendra.kulkarni#!/vizhome/Text_Analytics_Updated/Dashboard1" </a>
 
 ## Key Insights
 
