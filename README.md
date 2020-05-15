@@ -59,3 +59,4 @@ We tried to explore the data we have gathered to gain more insights into the dat
 ### 1. Number of reviews per company
 
 The figure 3 below shows the total number of reviews by company along with the distribution between Current, former and employees with no status. We can observe that Amazon has a lot more reviews compared to other firms followed by IBM, Microsoft and Google. Also, among those categorized as current and former employees, current employees have more reviews for all the companies.  
+
