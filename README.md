@@ -103,7 +103,9 @@ Figure 8: Polarity score of reviews that were rated 3 or below.
 After cleaning the text and performing exploratory analysis, we decided to do sentiment analysis to achieve two purposes. The primary purpose was to estimate the employee satisfaction with the organization from the reviews. Secondly, to check if the ratings provided against the reviews were reflecting the emotion or sentiment in the textual content of the review.
 
 To achieve these objectives, we tried to first understand which library was working better by passing some reviews to NLTK and TextBlob. One key observation was that TextBlob was failing when it was used on negative reviews. The figure below shows the sample reviews on which TextBlob and NLTK were applied and the resultant sentiment score. We can see that TextBlob returns high positive sentiment score for negative score whereas NLTK does a better job with the same reviews. So, we decided to use NLTK for our sentiment analysis.
- 
+
+
+
 Figure 9: Using TextBlob and NLTK for sentiment score analysis on negative reviews
  
 ### 2. Identifying n-grams as Characteristics of a Company
