@@ -1,5 +1,3 @@
-# TEXT MINING EMPLOYER BRAND AND EMPLOYEE SATISFACTION
-
 ## Executive Summary
 
 Text Analytics is gaining importance with each passing day and individuals and organizations are exploring ways to use this to their own advantage. We too attempt to leverage the benefits of text analytics and implement it in the area of human resources to gain some meaningful insights useful for both the organizations and candidates looking for jobs. Social media data has been exploited to understand the pulse of general populace for a product or service, but we try to look at the employees view of employers. We extract employee reviews from Glassdoor for textual analysis to understand the employer brand and employee’s satisfaction with their employers.
