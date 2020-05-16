@@ -42,7 +42,6 @@ Once the data from Glassdoor is extracted, we must consider (or construct) a sys
 Later, n-grams are extracted from text (both pros and cons) along with its corresponding sentiment score. Top bi-grams and tri-grams are identified by the frequency of occurrence in the corpus for each company as these are the most talked in the reviews. Next, we perform Similarity score analysis to identify unique n-grams and zero in top 5 positive and negative n-grams by average sentiment score. The results are then aggregated on a comprehensive dashboard.
 
 ![Capture3](https://user-images.githubusercontent.com/46653178/82083161-3e805200-96b7-11ea-88f4-74224dc18003.JPG)
-
 Figure 2: Flow chart depicting the process flow for the study
 
 ## Exploratory Data Analysis
@@ -59,7 +58,6 @@ We tried to explore the data we have gathered to gain more insights into the dat
 The figure 3 below shows the total number of reviews by company along with the distribution between Current, former and employees with no status. We can observe that Amazon has a lot more reviews compared to other firms followed by IBM, Microsoft and Google. Also, among those categorized as current and former employees, current employees have more reviews for all the companies.  
 
 ![Capture4](https://user-images.githubusercontent.com/46653178/82084413-4214d880-96b9-11ea-8091-f0b2ecef541a.jpg)
-
 Figure 3: Distribution of reviews by company
 
 ### 2. Rating distribution in the companies
@@ -67,7 +65,6 @@ Figure 3: Distribution of reviews by company
 Looking at the rating distribution by company on a scale of 1-5 (5 being the best) in figure 4 below, we can conclude that all the companies were predominantly rated either 4 or 5. Interestingly, Microsoft is the only firm with more 4 ratings than 5 ratings.   
  
 ![Capture5](https://user-images.githubusercontent.com/46653178/82084575-7be5df00-96b9-11ea-9d0a-55a48399efe5.JPG)
-
 Figure 4: Rating distribution by company
 
 ### 3. Word count in reviews
@@ -75,11 +72,9 @@ Figure 4: Rating distribution by company
 We wanted to see how long (in words) the reviews were typically to understand if we can infer some meaning from the text. A review with just few words would not have helped the analysis as most of the words would be stop words or words with no real meaning. But much to our comfort, the reviews were not too short with most falling under the range of 5-15 words for both pros and cons. Figure 5 and 6 show the distribution of words in pros and cons respectively.
 
 ![Capture6](https://user-images.githubusercontent.com/46653178/82084874-0dede780-96ba-11ea-8613-d71f2b5b2d8a.JPG)
-
 Figure 5: Word count in pros text
 
 ![Capture7](https://user-images.githubusercontent.com/46653178/82085313-d03d8e80-96ba-11ea-9e78-06dcf72fc5c2.JPG)
-
 Figure 6: Word count in cons text
 
 ### 4. Polarity score distribution by company
@@ -87,11 +82,9 @@ Figure 6: Word count in cons text
 Another important analysis we wanted to explore was the distribution of sentiment score for each company. Consistent to the ratings, the sentiment score was predominantly on the positive side (Figure 7). Although, there were some anomalies, the ratings were consistent with the polarity distribution. In other words, reviews which had good ratings (4 or 5) had high positive polarity score. Figure 8 shows the distribution of polarity score for reviews that were rated 3 or below. Ideally, we would have liked to see a lower polarity score for these but almost 19,000+ reviews show high polarity score of >0.6.
 
 ![Capture8](https://user-images.githubusercontent.com/46653178/82085512-2dd1db00-96bb-11ea-853a-2a87b9623386.JPG) 
-   
-Figure 7: Polarity score distribution for each review by company
+   Figure 7: Polarity score distribution for each review by company
 
 ![Capture9](https://user-images.githubusercontent.com/46653178/82085665-5b1e8900-96bb-11ea-9eb0-baf3d4339ec3.JPG)
-
 Figure 8: Polarity score of reviews that were rated 3 or below.
 
 ## Choice and Rationale for Text Analytics Methods and Results
@@ -103,7 +96,6 @@ After cleaning the text and performing exploratory analysis, we decided to do se
 To achieve these objectives, we tried to first understand which library was working better by passing some reviews to NLTK and TextBlob. One key observation was that TextBlob was failing when it was used on negative reviews. The figure below shows the sample reviews on which TextBlob and NLTK were applied and the resultant sentiment score. We can see that TextBlob returns high positive sentiment score for negative score whereas NLTK does a better job with the same reviews. So, we decided to use NLTK for our sentiment analysis.
 
 ![Capture10 JPG](https://user-images.githubusercontent.com/46653178/82087094-6ecaef00-96bd-11ea-80b5-c3c32ef8090f.png)
-
 Figure 9: Using TextBlob and NLTK for sentiment score analysis on negative reviews
  
 ### 2. Identifying n-grams as Characteristics of a Company
@@ -113,7 +105,6 @@ We chose to do Frequency-based vectorization and are using CountVectorizer for e
 Previous works have used single words and manually completed the characteristic based on the polarity of the word. For example, if the word ‘hours’ returned a negative sentiment score then the characteristic was manually considered as ‘long work hours’ for a company. To overcome this kind of manual estimation, we have extracted the bi-grams and tri-grams along with the sentiment score. The figure below shows the top 5 bi-grams and tri-grams for one of the companies- IBM. Note that some of the tri-grams and bi-grams are similar (used similarity analysis explained in next section to resolve this) and some actually do not have much meaning (for example- ‘not good’).
 
 ![Capture11](https://user-images.githubusercontent.com/46653178/82087265-c10c1000-96bd-11ea-8773-0846d7e2b181.JPG)
-
 Figure 10: Top 5 trigrams and bigrams by frequency for IBM 
 
 ### 3. Similarity Score Analysis 
@@ -123,7 +114,6 @@ Once the tri-grams and bi-grams were extracted, we used the top 100 by frequency
 This analysis was an improvement on previous works that tried to extract keywords that had the most impact on employee satisfaction. Using this we were able to combine different forms of the same characteristic and find the ‘Employer Brand’ characteristic which had the most positive and negative effect on employees.
 
 ![Capture12](https://user-images.githubusercontent.com/46653178/82087361-ef89eb00-96bd-11ea-9992-2f2a681225c8.JPG)
-
 Figure 11: Grouping of similar bi-grams and tri-grams using Similarity score analysis
 
 ### 4. Results
@@ -131,10 +121,11 @@ Figure 11: Grouping of similar bi-grams and tri-grams using Similarity score ana
 We tried to aggregate all the findings into a dashboard that can be used as single source of truth by both, candidates exploring job opportunities looking for feedback on employers and employers evaluating their employer brand and employee satisfaction levels.
 
 ![Capture15](https://user-images.githubusercontent.com/46653178/82094881-e9027000-96cb-11ea-8126-cf5aff9842e9.JPG)
-
 Figure 12: Dashboard showing the results
 
 [Click Here to view the tableau dashboard] (https://public.tableau.com/profile/vidya.sagar.gunnala#!/vizhome/TextAnalysis_15895752302410/Dashboard1)
+
+https://public.tableau.com/
 
 ## Key Insights
 
