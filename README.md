@@ -142,16 +142,18 @@ Some of the key insights drawn from this study are;
 
 1. All the companies have seen a decline in employee satisfaction levels from 2008, although there were some years when the satisfaction levels improved compared to preceding years
 2. Google and Microsoft have high average employee satisfaction followed by Amazon and IBM
-3. Employer characteristic which had the most positive effect on employee satisfaction-
- Amazon – Great Benefits 
-	Google – Free Food
-	IBM – Great People
-	Microsoft – Great Pay Benefit
- 4. Employer characteristic which had the most negative effect on employee satisfaction-
-	Amazon – Bad Work
-	Google – Bad Work Life
-	IBM – Hike Not Good
-	Microsoft – Life Balance
+3. Employer characteristic which had the most positive effect on employee satisfaction
+ 	
+	Amazon – Great Benefits;
+	Google – Free Food;
+	IBM – Great People;
+	Microsoft – Great Pay Benefit;
+ 4. Employer characteristic which had the most negative effect on employee satisfaction
+	
+	Amazon – Bad Work;
+	Google – Bad Work Life;
+	IBM – Hike Not Good;
+	Microsoft – Life Balance;
 
 Actions recommended;
 
