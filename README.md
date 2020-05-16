@@ -134,7 +134,7 @@ We tried to aggregate all the findings into a dashboard that can be used as sing
 
 Figure 12: Dashboard showing the results
 
-Link to the tableau dashboard: https://public.tableau.com/profile/vidya.sagar.gunnala#!/vizhome/TextAnalysis_15895752302410/Dashboard1
+[Click Here to view the tableau dashboard!] (https://public.tableau.com/profile/vidya.sagar.gunnala#!/vizhome/TextAnalysis_15895752302410/Dashboard1)
 
 ## Key Insights
 
